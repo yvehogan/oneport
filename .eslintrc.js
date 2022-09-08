@@ -1,45 +1,47 @@
 module.exports = {
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "node": true
+  env: {
+    browser: true,
+    es2021: true,
+    node: true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended"
+  extends: [
+    'eslint:recommended',
+    'airbnb',
+    'plugin:react/recommended'
   ],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
     },
-    "ecmaVersion": "latest",
-    "sourceType": "module"
+    ecmaVersion: 'latest',
+    sourceType: 'module'
   },
-  "plugins": [
-    "react"
+  plugins: [
+    'react'
   ],
-  "rules": {
-    "indent": [
-      "error",
+  rules: {
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    indent: [
+      'error',
       2
     ],
-    "no-console": "off",
-    "comma-dangle": [
-      "error",
-      "never"
+    'no-console': 'off',
+    'comma-dangle': [
+      'error',
+      'never'
     ],
-    "linebreak-style": [
-      "error",
-      "windows"
+    'linebreak-style': [
+      'error',
+      'windows'
     ],
-    "react/jsx-filename-extension": [
+    'react/jsx-filename-extension': [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
+        extensions: [
+          '.js',
+          '.jsx'
         ]
       }
     ]
   }
-}
+};
