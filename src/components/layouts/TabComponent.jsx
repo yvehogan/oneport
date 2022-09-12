@@ -22,10 +22,10 @@ function TabComponent() {
   return (
     <div>
       <div className="flex justify-between items-center mt-5">
-        <p>Uploaded Documents</p>
+        <p className="min-w-max">Uploaded Documents</p>
         <div className="flex gap-5">
           <Button
-            className="font-semibold text-black"
+            className="font-semibold text-black min-w-max"
             paddingY="py-3"
             bgColor="transparent"
             border
@@ -34,7 +34,7 @@ function TabComponent() {
           </Button>
           <Button
             onClick={() => setShowModal(true)}
-            className="font-semibold text-white"
+            className="font-semibold text-white min-w-max"
             paddingY="py-3"
           >
             Upload Document
@@ -43,7 +43,7 @@ function TabComponent() {
         </div>
       </div>
       <div className="flex justify-between mt-7 border p-5 rounded">
-        <div className="flex">
+        <div className="flex min-w-max">
           <img className="pr-5 object-contain" src={Icon} alt="" />
           <div className="">
             <h1>NXP Form</h1>
@@ -55,7 +55,7 @@ function TabComponent() {
       </div>
 
       <div className="flex justify-between mt-7 border p-5 rounded">
-        <div className="flex">
+        <div className="flex min-w-max">
           <img className="pr-5 object-contain" src={Icon} alt="" />
           <div className="">
             <h1>NXP Form</h1>
@@ -69,7 +69,7 @@ function TabComponent() {
           <div
             className="justify-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 "
           >
-            <div className="relative w-1/2 ml-auto">
+            <div className="relative md:w-1/2 w-full ml-auto">
               <div className="shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 <div className="flex items-start justify-between p-2">
                   <div className="flex items-center justify-end p-5">

@@ -17,9 +17,6 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: [
-    plugin(function ({ addVariant }) {
-      addVariant('current', '&.active');
-    }),
     'react'
   ],
   rules: {
