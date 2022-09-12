@@ -1,1 +1,1 @@
-Hosted link: https://oneport-assessment.netlify.app/customer
+Hosted link: https://oneport-assessment.netlify.app/
