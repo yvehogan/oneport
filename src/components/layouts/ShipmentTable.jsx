@@ -62,8 +62,6 @@ function ShipmentTable() {
   }, [search, shipmentType]);
 
   const dateOption = [
-    { value: 'export', label: 'Nigeria' },
-    { value: 'others', label: 'Others' }
   ];
   const typeOption = [
     { value: 'export', label: 'Export' },
@@ -101,7 +99,7 @@ function ShipmentTable() {
           <input
             value={search}
             onChange={(event) => setSearch(event.target.value)}
-            className="border-2 border-borderColor w-full h-10 rounded outline-none placeholder:pl-8"
+            className="border-2 border-borderColor w-full h-10 rounded outline-none pl-7"
             type="text"
             placeholder="Search by shipment ID, Destination"
           />
