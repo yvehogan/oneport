@@ -5,13 +5,11 @@ import Header from '../common/Header';
 
 function PageWrapper({ children }) {
   return (
-    <div className="w-full h-full min-h-screen relative md">
+    <div className="w-full flex h-full min-h-screen relative md">
       <Sidebar />
       <Header />
-      <div className="w-full text-textColor pl-60">
-        <div className="w-full relative max-w-screen-xl pt-12 pb-">
-          {children}
-        </div>
+      <div className="w-full lg:pl-80 pl-12 pt-12">
+        {children}
       </div>
     </div>
   );
